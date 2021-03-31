@@ -182,3 +182,5 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 process.umask = function() { return 0; };
+
+process[Symbol.toStringTag] = 'process';
